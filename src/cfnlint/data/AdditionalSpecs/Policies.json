@@ -10335,7 +10335,7 @@
       ]
     },
     "Amazon Elastic Container Service": {
-      "ARNFormat": "arn:aws:ecs:<region>:<account_ID>:<resource_type>/<relative_ID>",
+      "ARNFormat": "arn:${Partition}:ecs:${Region}:${Account}:${ResourceType}/${RelativeId}",
       "ARNRegex": "^arn:aws:ecs:.+",
       "Actions": [
         "CreateCapacityProvider",
@@ -10795,6 +10795,7 @@
         "DisassociateFileSystemAliases",
         "ListTagsForResource",
         "ManageBackupPrincipalAssociations",
+        "ReleaseFileSystemNfsV3Locks",
         "RestoreVolumeFromSnapshot",
         "TagResource",
         "UntagResource",
@@ -10872,8 +10873,8 @@
         "DescribeDataset",
         "DescribeDatasetGroup",
         "DescribeDatasetImportJob",
+        "DescribeExplainability",
         "DescribeExplainabilityExport",
-        "DescribeExplainablity",
         "DescribeForecast",
         "DescribeForecastExportJob",
         "DescribePredictor",
@@ -12026,6 +12027,7 @@
         "BatchPutGeofence",
         "BatchUpdateDevicePosition",
         "CalculateRoute",
+        "CalculateRouteMatrix",
         "CreateGeofenceCollection",
         "CreateMap",
         "CreatePlaceIndex",
